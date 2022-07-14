@@ -8,7 +8,6 @@ class MarvelApi {
   final DioClient dioClient;
   MarvelApi({required this.dioClient});
 
-
   Future<Response> getMarvelCharacters(int page) async {
     try {
       Map<String, String> params = Map();
@@ -19,11 +18,11 @@ class MarvelApi {
       params.putIfAbsent("limit", () => "${50}");
       params.putIfAbsent("offset", () => "${page}");
 
-      final Response response = await dioClient.get(Endpoint.characters, queryParameters: params);
+      final Response response =
+          await dioClient.get(Endpoint.characters, queryParameters: params);
       return response;
     } catch (e) {
       rethrow;
     }
-
   }
 }

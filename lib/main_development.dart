@@ -10,6 +10,5 @@ import 'package:new_project/app/app.dart';
 import 'package:new_project/bootstrap.dart';
 
 void main() {
-
   bootstrap(() => const ProviderScope(child: App()));
 }

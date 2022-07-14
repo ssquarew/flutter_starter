@@ -1,11 +1,8 @@
-
 import 'package:dio/dio.dart';
 import 'package:new_project/data/entity/marvel/characters.dart';
 import 'package:new_project/network/marvel_api.dart';
 
-
 class MarvelCharacterRespository {
-
   final MarvelApi _marvelApi;
 
   MarvelCharacterRespository(this._marvelApi);

@@ -26,8 +26,9 @@ class CounterViewModel extends StateNotifier<CounterModel> {
 
     logger.d("call ViewModel!! -> ${state.counter}");
   }
+
   decrement() async {
-    state = state.copyWith(counter: state.counter - 1 );
+    state = state.copyWith(counter: state.counter - 1);
 
     logger.d("call ViewModel!! -> ${state.counter}");
   }

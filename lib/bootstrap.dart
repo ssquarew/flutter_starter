@@ -11,9 +11,7 @@ import 'dart:developer';
 import 'package:flutter/widgets.dart';
 import 'package:new_project/di/service_locator.dart';
 
-
 Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
-
   setup();
 
   FlutterError.onError = (details) {
@@ -24,7 +22,6 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
     () async => runApp(await builder()),
     (error, stackTrace) {
       log(error.toString(), stackTrace: stackTrace);
-
     },
   );
 }
