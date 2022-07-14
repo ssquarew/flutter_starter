@@ -12,7 +12,8 @@ class MarvelCharacterRespository {
     try {
       final Response response = await this._marvelApi.getMarvelCharacters(page);
       print("::::item => ${response}");
-      final item = CharacterDataWrapper.fromJson(response.data);
+      final item =
+          CharacterDataWrapper.fromJson(response.data as Map<String, dynamic>);
       print("::::item => ${item}");
       return item;
     } catch (e) {
