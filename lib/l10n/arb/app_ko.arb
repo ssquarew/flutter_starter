@@ -1,0 +1,7 @@
+{
+    "@@locale": "ko",
+    "counterAppBarTitle": "마블의 영웅들",
+    "@counterAppBarTitle": {
+        "description": "카운터 타이틀"
+    }
+}
